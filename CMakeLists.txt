@@ -14,6 +14,7 @@ rosbuild_init()
 
 set(EXECUTABLE_OUTPUT_PATH bin)
 
+set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 
 set(DSO_PATH $ENV{DSO_PATH})
 message("\n\n---- LOOKING FOR DSO at\n\"${DSO_PATH}\"")

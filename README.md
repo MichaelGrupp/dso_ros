@@ -21,6 +21,8 @@ To access computed information in real-time, I recommend to implement your own O
 1. Install DSO. We need DSO to be compiled with OpenCV (to read the vignette image), and with Pangolin (for 3D visualization).
 2. run 
 
+		cd dso_ros
+		export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:`pwd`
 		export DSO_PATH=[PATH_TO_DSO]/dso
 		rosmake
 	
