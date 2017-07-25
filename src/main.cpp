@@ -226,9 +226,10 @@ int main( int argc, char** argv )
 
     ros::spin();
 
-	std::string out = "dso_trajectory.tum";
-	fullSystem->printResult(out);
-	printf("\ntrajectory (TUM format) saved to: %s\n", out.c_str());
+    std::string out = "dso_trajectory.tum";
+    fullSystem->printResult(out);
+    printf("\ntrajectory (TUM format) saved to: %s\n", out.c_str());
+
     for(IOWrap::Output3DWrapper* ow : fullSystem->outputWrapper)
     {
         ow->join();
